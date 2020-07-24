@@ -10,3 +10,97 @@ light blue background: #E6ECF4;
 clear button: #DE4841;
 clear button disabled: #D0CDCD
 */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  font-family: 'Life Savers', serif;
+  color: #2B4E80;
+  align-self: center;
+}
+img{
+
+}
+main{
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-template-rows: 1fr;
+  align-self: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.form-box{
+  padding: 25px;
+}
+form{
+  background-color: #E6ECF4;
+  height: 40vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+textarea{
+  font-family: 'Open Sans', sans-serif;
+  width: 85%;
+  height: 35px;
+  color: grey;
+  text-align: center;
+  border: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.submit-btn{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #607AA0;
+  width: 85%;
+  height: 35px;
+  border: 0;
+  margin-bottom: 10px;
+}
+.submit-btn:hover{
+  background-color: #1C3455;
+}
+.eight-ball{
+  width: 25%;
+  margin: 30px;
+}
+h6{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
+}
+h4{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+  text-align: center;
+}
+.clear-btn{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #D0CDCD;
+  margin: 10px;
+  height: 30px;
+  align-self: flex-end;
+  border: 0;
+}
+.woody-img{
+  padding: 25px;
+  height: 40vh;
+  width: auto;
+}
+.hidden{
+  display: none!important;
+}
+.enabled{
+  cursor: pointer;
+  background-color: #DE4841;
+}
