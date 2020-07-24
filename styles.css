@@ -71,10 +71,17 @@ textarea{
   margin: 30px;
 }
 h6{
-
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-align: center;
 }
 h4{
-
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+  text-align: center;
 }
 .clear-btn{
   font-family: 'Open Sans', sans-serif;
@@ -92,4 +99,8 @@ h4{
 }
 .hidden{
   display: none!important;
+}
+.enabled{
+  cursor: pointer;
+  background-color: #DE4841;
 }
