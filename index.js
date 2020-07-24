@@ -26,13 +26,15 @@ var body = document.querySelector('body');
 var form = document.querySelector('form');
 var eightBall = document.querySelector('.eight-ball')
 var questionInput = document.querySelector('textarea')
+var submitButton = document.querySelector('.submit-btn')
 var messageQuestion = document.querySelector('h6')
 var messageAnswer = document.querySelector('h4')
 var messageField = document.querySelector('div')
 var clearBtn = document.querySelector('.clear-btn')
 // Event Listeners
 body.addEventListener('click', clickHandler);
-// body.addEventListener('keyup', keyupHandler);
+body.addEventListener('keyup', keyupHandler);
+window.onload = disableEnableButton();
 
 // Functions
 function clickHandler(event){
@@ -42,6 +44,11 @@ function clickHandler(event){
     if (event.target.classList.contains('clear-btn')){
       clearPage();
     }
+};
+function keyupHandler(event){
+  if(event.target === questionInput) {
+    disableEnableButton();
+  }
 };
 
 // function testFunction(){
@@ -58,6 +65,7 @@ function displayMessage(){
   messageField.classList.remove('hidden');
   clearBtn.classList.add('enabled');
   form.reset();
+  disableEnableButton();
 };
 
 function createMessage(){
@@ -69,4 +77,14 @@ function clearPage(){
   eightBall.classList.remove('hidden');
   messageField.classList.add('hidden');
   clearBtn.classList.remove('enabled');
+  disableEnableButton();
+};
+
+function disableEnableButton(){
+  if (questionInput.value === ''){
+    submitButton.disabled = true;
+  };
+  if (questionInput.value !== ''){
+    submitButton.disabled = false;
+  };
 };
